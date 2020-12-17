@@ -1,0 +1,22 @@
+{
+  "name": "muemin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "subpkg run frontendHotReload & subpkg run phpBackendServer",
+    "prod": "subpkg run frontendBuild & subpkg run phpServer",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "subPackages": [
+    "backend",
+    "frontend"
+  ],
+  "keywords": [],
+  "author": "Paul Dreyer",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "subpackage": "^1.1.0"
+  }
+}
